@@ -63,7 +63,6 @@ export default class Dispatcher extends Core {
     const apiWithSupportedLanguage = clouds.find((item) =>
       item.supportedLanguages.includes(language)
     );
-    console.log(apiWithSupportedLanguage);
     if (apiWithSupportedLanguage) {
       translatedText = apiWithSupportedLanguage.translate(text, language);
     }
